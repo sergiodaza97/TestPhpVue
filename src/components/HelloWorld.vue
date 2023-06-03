@@ -1,33 +1,15 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <nav class="title">
+    <router-link to="/">Modulos</router-link>
+  </nav>
+  <div>
+      <div class="module">
+        <span class="text">Procesos/Eventos</span>
+          <div class="access">
+            <router-link to="/view">Acceder</router-link>
+          </div>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -41,18 +23,50 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+nav {
+  padding: 30px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+nav a {
+  font-weight: bold;
+  color: #f4f6f8;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+nav a.router-link-exact-active {
+  color: #363699;
 }
-a {
-  color: #42b983;
+.title{
+  font-size: 30px;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+.module{
+  border-style: solid;
+  width: 250px;
+  height: 80px;
+  background: #363699;
+  border-radius: 5px;
+  border-color: #363699;
+  font-size: larger;
+}
+.text{
+  color: white;
+  position: relative;
+  top: 20%;
+  font-size: larger;
+}
+.access{
+  width: -webkit-fill-available;
+  position: relative;
+  top: 40%;
+  background-color: #282870;
+  color: white;
+  height: 23px;
+  border-radius: 5px;
+}
+.ti{
+  font-size: 25px;
 }
 </style>
