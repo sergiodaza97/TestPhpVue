@@ -1,27 +1,24 @@
 # testsuplos
+Prueba de validación de conocimiento Bienvenido. Esta es la prueba técnica para validar mis conocimientos y fortalezas en el mundo de Backend y frontend utilizando php, vue.js, y con base de datos MySql, demostrando así mi capacidad de arquitectura de codigo, patrones de diseño, clean code y demás para el mundo de Suplos.
 
-## Project setup
-```
-npm install
-```
+### HERRAMIENTAS DE DESARROLLO UTILIZADAS
+PHP 7.3.0
+visual studio code
+xampp
+Git
+GitHub
+vue3
+node 9.5.0
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Como descargar y ponerlo a correr en local
+Descargar Xampp con version de php 7.3
+Descargar node con version 9.5.0
+Abrimos xampp, entramos a htdocs y creamos una carpeta en la cual ira nuestro repositorio
+abrimos cualquier editor de codigo "Recomiendo Visual Studio Code"
+habra la terminal y agregue el comando git clone https://github.com/sergiodaza97/TestPhpVue.git y precione enter
+Corra comando npm i
+corra comando npm run serve
+copiar la direccio http y pegarla en su navegador y dar enter.
 
 ### db
 CREATE TABLE `records` (
